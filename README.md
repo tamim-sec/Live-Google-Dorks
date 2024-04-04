@@ -7,7 +7,7 @@
 ### PHP extension w/ parameters
 
 > site:example.com ext:php inurl:?
-> site:example.com inurl:"scratch/category.php"
+> site:example[.]com inurl:"scratch/category.php"
 > site:example.com/webap
 
 
@@ -22,8 +22,8 @@
 ### XSS prone parameters
 
 > inurl:q= | inurl:s= | inurl:search= | inurl:query= | inurl:keyword= | inurl:lang= inurl:& site:example.com
-> site:target.com "register forum"
-> site:example.com inurl:id= | inurl:url= | inurl:redirect= | inurl:login | inurl:admin | inurl:page= | inurl:year= | inurl:view= | inurl:email= | inurl:type= | inurl:name= | inurl:p= | inurl:month= 
+> site:example.com "register forum"
+> site:example[.]com inurl:id= | inurl:url= | inurl:redirect= | inurl:login | inurl:admin | inurl:page= | inurl:year= | inurl:view= | inurl:email= | inurl:type= | inurl:name= | inurl:p= | inurl:month= 
 
 ### Open Redirect prone parameters
 
@@ -53,7 +53,7 @@
 ### Sensitive Parameters/files
 
 > inurl:email= | inurl:phone= | inurl:password= | inurl:secret= inurl:& site:example[.]com
-> site:example[.]com filetype:pdf,xlsx,docx,csv
+> site:example.com filetype:pdf,xlsx,docx,csv
 
 ### API Docs
 
@@ -131,14 +131,14 @@
 > site:*/joomla/login
 
 ### Sensitive field
-> site:target.com "login" | inurl:login | allinurl:login portal | intitle:login | intitle:login portal | intext:login portal
+> site:example[.]com "login" | inurl:login | allinurl:login portal | intitle:login | intitle:login portal | intext:login portal
 
 ### Sensitive information leakage
-> site:example.com inurl:.gov password | credential | username filetype:log
-> site:example.com inurl:nokia not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:pdf
-> site:example.com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private | WS_FTP | ws_ftp | log | LOG filetype:log
-> site:example.com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:xls
-> site:example.com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:csv
-> site:example.com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:doc
-> site:example.com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:txt
-> site:example.com inurl:.gov password | credential | username filetype:log
+> site:example[.]com inurl:.gov password | credential | username filetype:log
+> site:example[.]com inurl:nokia not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:pdf
+> site:example[.]com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private | WS_FTP | ws_ftp | log | LOG filetype:log
+> site:example[.]com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:xls
+> site:example[.]com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:csv
+> site:example[.]com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:doc
+> site:example[.]com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:txt
+> site:example[.]com inurl:.gov password | credential | username filetype:log
