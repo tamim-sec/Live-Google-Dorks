@@ -60,7 +60,6 @@
 > inurl:apidocs | inurl:api-docs | inurl:swagger | inurl:api-explorer site:"example[.]com"
 > intitle:"index of" api_key | "api key" | apikey -pool site:"example[.]com"
 > intitle:"index.of" intext:"api.txt" site:"example[.]com"
-> 
 
 ### Code Leaks
 
@@ -143,3 +142,4 @@
 > site:example.com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:doc
 > site:example.com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:txt
 > site:example.com inurl:.gov password | credential | username filetype:log
+> 
