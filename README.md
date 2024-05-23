@@ -142,3 +142,4 @@
 > site:example[.]com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:doc
 > site:example[.]com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:txt
 > site:example[.]com inurl:.gov password | credential | username filetype:log
+> intitle:"index of /" site:example[.]com
