@@ -48,6 +48,7 @@
 ### High % inurl keywords
 
 > inurl:config | inurl:env | inurl:setting | inurl:backup | inurl:admin | inurl:php site:example[.]com
+> inurl:conf | inurl:env | inurl:cgi | inurl:bin | inurl:etc | inurl:root | inurl:sql | inurl:backup | inurl:admin | inurl:php site:example[.]com
 > site:example[.]com intitle:"index of"  inurl:/config/
 
 ### Sensitive Parameters/files
