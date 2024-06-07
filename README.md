@@ -148,15 +148,15 @@
 
 ### Blind Xss 
 
-> site:example[.]com intitle:"contact.php" |intitle:"contactus" |intitle:"contactus.php" |intitle:"contactus.aspx" |intitle:"contactus.asp" |intitle:"contactus.html" |intitle:"contact-us.html" |intitle:"contact_us.html" |intitle:"contact.html" |intitle:"contactus.html"
-> site:example[.]com inurl:"contact.php" |inurl:"contactus" |inurl:"contactus.php" |inurl:"contactus.aspx" |inurl:"contactus.asp" |inurl:"contactus.html" |inurl:"contact-us.html" |inurl:"contact_us.html" |inurl:"contact.html" |inurl:"contactus.html"
-> site:example[.]com inurl:"feedback.php" |inurl:"send feedback" |inurl:"feedbackus.php" |inurl:"feedback.aspx" |inurl:"feedback.asp" |inurl:"feedback.html   | intitle:"send feedback"
+> site:example[.]com intitle:"contact.php" | intitle:"contactus" | intitle:"contactus.php" | intitle:"contactus.aspx" | intitle:"contactus.asp" | intitle:"contactus.html" | intitle:"contact-us.html" | intitle:"contact_us.html" | intitle:"contact.html" | intitle:"contactus.html"
+> site:example[.]com inurl:"contact.php" | inurl:"contactus" | inurl:"contactus.php" | inurl:"contactus.aspx" | inurl:"contactus.asp" | inurl:"contactus.html" | inurl:"contact-us.html" | inurl:"contact_us.html" | inurl:"contact.html" | inurl:"contactus.html"
+> site:example[.]com inurl:"feedback.php" | inurl:"send feedback" | inurl:"feedbackus.php" | inurl:"feedback.aspx" | inurl:"feedback.asp" | inurl:"feedback.html" | intitle:"send feedback"
 > site:example[.]com inurl:"Send Us a Message" |intitle:"Send Us a Message"
-> site:example[.]com intitle:"support.php" |intitle:"support" |intitle:"contactus.php" |intitle:"support.aspx" |intitle:"support.asp" |intitle:"support.html" |intitle:"support-us.html"
-> site:example[.]com inurl:submit messages  | inurl:submit  | inurl:submit messages | inurl:submit form | intitle:submit form
+> site:example[.]com intitle:"support.php" | intitle:"support" | intitle:"contactus.php" | intitle:"support.aspx" | intitle:"support.asp" | intitle:"support.html" | intitle:"support-us.html"
+> site:example[.]com inurl:submit messages | inurl:submit  | inurl:submit messages | inurl:submit form | intitle:submit form
 > site:example[.]com inurl:Support Center | intitle:Support Center
-> site:example[.]com intitle:"submit.php" |intitle:"submit" |intitle:"submit.php" |intitle:"submit.aspx" |intitle:"submit.asp" |intitle:"submit.html" |intitle:"submit-us.html" |intitle:"submit_us.html" |intitle:"submit.html" |intitle:"submit.html"
-> site:example[.]com inurl:submit a request   | intitle:submit a request
-> site:example[.]com inurl:submit a report   | intitle:submit a report
+> site:example[.]com intitle:"submit.php" | intitle:"submit" | intitle:"submit.php" | intitle:"submit.aspx" | intitle:"submit.asp" | intitle:"submit.html" | intitle:"submit-us.html" | intitle:"submit_us.html" | intitle:"submit.html" | intitle:"submit.html"
+> site:example[.]com inurl:submit a request | intitle:submit a request
+> site:example[.]com inurl:submit a report | intitle:submit a report
 > site:example[.]com intext:Attachments (optional)
 > site:example[.]com intext:Please choose a request type below
