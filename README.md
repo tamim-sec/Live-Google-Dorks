@@ -8,7 +8,7 @@
 
 > site:example.com ext:php inurl:?
 > site:example[.]com inurl:"scratch/category.php"
-> site:example.com/webap
+> site:example.com/webp
 
 
 ### Disclosed XSS and Open Redirects
