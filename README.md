@@ -35,7 +35,8 @@
 
 ### SSRF Prone Parameters
 
-> inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= | inurl:domain=  | inurl:page= inurl:& site:example.com
+> inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= | inurl:out= | inurl:callback  | inurl:domain=  | inurl:page= inurl:& site:example.com
+> inurl:continue= | inurl:window= | inur:site= | inurl:return= | inurl:view= | inurl:port= | inurl:print= | inurl:export= | inurl:dir= site:example.com
 
 ### LFI Prone Parameters
 
