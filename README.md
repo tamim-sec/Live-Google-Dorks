@@ -32,6 +32,10 @@
 ### SQLi Prone Parameters
 
 > inurl:id= | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= inurl:& site:example.com
+> site:example.com ext:sql | ext:dbf | ext:mdb
+> site:example.com intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"
+> site:example.com inurl:"php?sql=select" ext:php
+> site:example.com "sql" "parent" intitle:index.of -injection
 
 ### SSRF Prone Parameters
 
@@ -56,6 +60,17 @@
 
 > inurl:email= | inurl:phone= | inurl:password= | inurl:secret= inurl:& site:example[.]com
 > site:example.com filetype:pdf,xlsx,docx,csv
+> site:example.com ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv
+> site:example.com inurl:readme | inurl:license | inurl:install | inurl:setup | inurl:config
+> site:example.com ext:action | ext:struts | ext:do
+> inurl:"/phpinfo.php" | inurl:".htaccess" | inurl:"/.git" example.com -github
+> +inurl:example.com +ext:swf
+> site:example.com intitle:"Index of" inurl:/backup/ "admin.zip"
+> site:example.com intext:"index of" inurl:json-rpc
+> site:example.com intext:"index of" inurl:jwks-rsa
+> site:example.com intitle:"index of" "users.yml" | "admin.yml" | "config.yml"
+> site:example.com intitle:"index of" "docker-compose.yml"
+> site:example.com intext:"Index of" intext:"/etc"
 
 ### API Docs
 
@@ -123,14 +138,20 @@
 
 > site:example[.]com inurl:/wp-admin/admin-ajax.php
 > site:example[.]com inurl:/wp-json/wp/v2/users
+> site:example.com inurl:wp- | inurl:wp-content | inurl:plugins | inurl:uploads | inurl:themes | inurl:download
+> site:example.com inurl:*/wp-content/plugins/contact-form-7/
+> site:example.com inurl:wp-content/uploads/wcpa_uploads
+> site:example.com inurl:"wp-content" intitle:"index.of" intext:wp-config.php
+> site:example.com inurl:"wp-content" intitle:"index.of" intext:backup"
 
 ### Drupal
 
-> intext:"Powered by" & intext:Drupal & inurl:user
+> site:example.com inurl:user intitle:"Drupal" intext:"Log in" -"powered by"
+> site:example.com inurl:user intitle:"Drupal" intext:"Log in" -"powered by"
 
 ### Joomla
 
-> site:*/joomla/login
+> site:example.com inurl: /libraries/joomla/database/
 
 ### Sensitive field
 > site:example[.]com "login" | inurl:login | allinurl:login portal | intitle:login | intitle:login portal | intext:login portal
@@ -145,6 +166,9 @@
 > site:example[.]com inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:txt
 > site:example[.]com inurl:.gov password | credential | username filetype:log
 > intitle:"index of /" site:example[.]com
+> site:example.com ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
+> site:example.com intitle:"index of" github-api
+
 
 
 ### Blind Xss 
