@@ -71,6 +71,8 @@
 > site:example.com intitle:"index of" "users.yml" | "admin.yml" | "config.yml"
 > site:example.com intitle:"index of" "docker-compose.yml"
 > site:example.com intext:"Index of" intext:"/etc"
+> site:example.com ext:txt "passwd"
+> filetype:txt "Passwd" site:example.com 
 
 ### API Docs
 
