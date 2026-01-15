@@ -72,7 +72,21 @@
 > site:example.com intitle:"index of" "docker-compose.yml"
 > site:example.com intext:"Index of" intext:"/etc"
 > site:example.com ext:txt "passwd"
-> filetype:txt "Passwd" site:example.com 
+> filetype:txt "Passwd" site:example.com
+> site:example.com (ext:env | ext:log | ext:bak | ext:sql | ext:zip | ext:conf | ext:ini) (intext:"db_password" | intext:"password" | intext:"authorization" | intext:"api_key" | intext:"private key") -stackoverflow -github
+> site:example.com (ext:pem | ext:key) ("PRIVATE KEY" | "BEGIN RSA PRIVATE KEY" | "BEGIN OPENSSH PRIVATE KEY") 
+-stackoverflow -github
+> site:example.com (ext:sql | ext:bak | ext:zip | ext:tar | ext:gz | ext:rar) ("dump" | "backup" | "password" | "credentials")
+> site:example.com intitle:index.of (env | .git | .svn | backup | db.sql | .bak | config | secrets)
+-stackoverflow -github
+> site:example.com ("Warning: mysql_fetch_assoc()" | "Warning: pg_connect()" | "Notice: Undefined index" | "System.Data.SqlClient.SqlException") -stackoverflow -github
+> site:example.com (filetype:doc | filetype:docx | filetype:xls | filetype:xlsx | filetype:ppt | filetype:pptx) 
+("password" | "credentials" | "db user" | "db pass" | "secret key")
+-stackoverflow -github
+> site:example.com intitle:"index of" ".git"
+> site:example.com filetype:env "APP_KEY="
+> site:example.com intitle:"index of" ".svn"
+
 
 ### API Docs
 
